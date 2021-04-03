@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/linear2"
+        android:text="@string/thong_bao"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearmenu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"
+
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textviewpager1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/monMoi"
+            android:textColor="#000000"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_2sdp">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearmenu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearmenu1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textviewpager2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/voucher"
+            android:textColor="#000000"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_2sdp">
+
+        </androidx.viewpager.widget.ViewPager>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearmenu2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textviewpager3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/suKien"
+            android:textColor="#000000"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_2sdp">
+
+        </androidx.viewpager.widget.ViewPager>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+        </TextView>
+    </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
+</layout>

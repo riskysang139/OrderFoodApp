@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/_40sdp">
+        <ImageButton
+            android:layout_width="@dimen/_40sdp"
+            android:background="#00FFFFFF"
+            android:id="@+id/exit"
+            android:src="@drawable/left_arrow"
+            android:layout_height="match_parent">
+
+        </ImageButton>
+        <TextView
+            android:id="@+id/list_mon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/monTay"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="#000000"
+            android:gravity="center"
+            ></TextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycleviewMon"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/linear"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/trangChu"
+    android:icon="@drawable/home"
+    android:title="@string/trang_chu">
+</item>
+    <item
+        android:id="@+id/gioHang"
+        android:icon="@drawable/shoping_cart"
+        android:title="@string/don_hang">
+
+    </item>
+    <item
+        android:id="@+id/daLuu"
+        android:icon="@drawable/heart_main"
+        android:title="@string/da_luu">
+
+    </item>
+    <item
+        android:id="@+id/thongBao"
+        android:icon="@drawable/notification"
+        android:title="@string/thong_bao">
+
+    </item>
+    <item
+        android:id="@+id/toi"
+        android:icon="@drawable/user"
+        android:title="@string/toi">
+
+    </item>
+</menu>

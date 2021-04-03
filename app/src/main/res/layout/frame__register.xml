@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dangnhap">
+        <ImageButton
+            android:layout_width="@dimen/_40sdp"
+            android:src="@drawable/left_arrow"
+            android:background="#00FFFFFF"
+            android:id="@+id/logout"
+            android:layout_height="@dimen/_40sdp">
+        </ImageButton>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:text="@string/dangKi"
+            android:textColor="#000000"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/text"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/login"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/hoVaTen"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/hoTen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/linear1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/login"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/soDienThoai"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/sdt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/linear2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/login"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/Email"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/linear3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/login"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/taiKhoan1"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@android:color/transparent"
+                android:lines="1"
+                android:maxLines="1"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear5"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/linear4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/login"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/matKhau1"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@android:color/transparent"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_13sdp"></EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerAccount"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_below="@id/linear5"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="#5AC620"
+            android:text="@string/dangKi"
+            android:textColor="#FFFFFF"></Button>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+     <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/frameRegister"
+        android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/dangnhap"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_350sdp"
+        android:layout_centerInParent="true"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/_26sdp"
+            android:textStyle="bold"
+
+            android:textColor="#431111"
+            android:id="@+id/textLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <RelativeLayout
+
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/relaveDangNhap"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@drawable/login"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_below="@id/textLogin">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/imageUser"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:src="@drawable/ic_baseline_account_circle_24">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@id/imageUser"
+                android:background="@android:color/transparent"
+                android:hint="@string/taiKhoan"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"></EditText>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/relavePass"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/login"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_below="@id/relaveDangNhap">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/imagePass"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:src="@drawable/ic_baseline_vpn_key_24">
+            </ImageView>
+                <EditText
+                    android:background="@android:color/transparent"
+                    android:layout_width="@dimen/_230sdp"
+                    android:id="@+id/password"
+                    android:hint="@string/matKhau"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/imagePass"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="@dimen/_40sdp">
+                </EditText>
+        </RelativeLayout>
+    <Button
+        android:layout_width="@dimen/_230sdp"
+        android:layout_below="@id/relavePass"
+        android:id="@+id/login"
+        android:layout_centerInParent="true"
+        android:text="@string/dangNhap"
+        android:textColor="#FFFFFF"
+        android:background="#5AC620"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="@dimen/_36sdp">
+    </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/textHoac"
+            android:text="----------HOẶC----------"
+            android:textSize="@dimen/_14sdp"
+            android:layout_below="@id/login"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+        </TextView>
+        <Button
+            android:layout_width="@dimen/_200sdp"
+            android:layout_below="@id/textHoac"
+            android:id="@+id/register"
+            android:layout_centerInParent="true"
+            android:text="@string/dangKi"
+            android:textColor="#FFFFFF"
+            android:background="@color/main_color"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="@dimen/_36sdp">
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>
+</FrameLayout>
+</layout>

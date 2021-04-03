@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    android:id="@+id/swipeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:mode="same_level"
+    android:background="#FFFFFF"
+    app:dragEdge="right">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/deleteLayout"
+        android:layout_height="@dimen/_125sdp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/_60sdp"
+            android:background="@color/main_color"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center|top"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:paddingTop="@dimen/_40sdp"
+            android:drawableTop="@drawable/ic_baseline_delete_24"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/_125sdp">
+
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp">
+        <ImageButton
+            android:layout_width="@dimen/_100sdp"
+            android:id="@+id/imageButton"
+            android:scaleType="fitXY"
+            android:background="#00FFFFFF"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="@dimen/_100sdp">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/imageButton"
+
+            android:gravity="top|center"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="VỊt Quay Bắc Kinh"
+            android:textColor="#000000"
+            android:textSize="@dimen/_15sdp"></TextView>
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:id="@+id/price"
+            android:layout_below="@id/textTitle"
+            android:layout_toRightOf="@id/imageButton"
+            android:text="50.000 VNĐ"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/main_color"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_below="@id/textTitle"
+            android:layout_toRightOf="@id/price"
+            android:text="VNĐ"
+            android:gravity="center|top"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/main_color"
+            android:layout_height="wrap_content">
+        </TextView>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_below="@id/price"
+           android:layout_toRightOf="@id/imageButton"
+           android:gravity="center"
+           android:id="@+id/linear"
+           android:orientation="horizontal"
+           android:layout_height="@dimen/_40sdp">
+           <Button
+               android:layout_width="@dimen/_30sdp"
+               android:text="-"
+               android:id="@+id/btntru"
+               android:layout_gravity="center"
+               android:background="@color/main_color"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"
+               android:layout_height="@dimen/_30sdp">
+
+           </Button>
+           <TextView
+               android:text=""
+               android:id="@+id/textSoLuong"
+               android:textSize="@dimen/_14sdp"
+               android:textColor="#000000"
+               android:gravity="center"
+               android:layout_width="@dimen/_50sdp"
+               android:layout_height="match_parent">
+
+           </TextView>
+           <Button
+               android:layout_width="@dimen/_30sdp"
+               android:text="+"
+               android:layout_gravity="center"
+               android:background="@color/main_color"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"
+               android:id="@+id/btncong"
+               android:layout_height="@dimen/_30sdp">
+
+           </Button>
+
+       </LinearLayout>
+        <TextView
+            android:layout_width="@dimen/_280sdp"
+            android:layout_centerHorizontal="true"
+            android:background="#BCBBBB"
+            android:layout_below="@id/linear"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="1dp">
+
+        </TextView>
+
+    </RelativeLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

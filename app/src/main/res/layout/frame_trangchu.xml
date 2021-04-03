@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relativeLayout"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_toLeftOf="@id/located"
+            android:id="@+id/linearsearch"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/shape_timkiem"
+            android:orientation="horizontal">
+            <Button
+                android:background="#00000000"
+                android:id="@+id/imagesearch"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/search"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_12sdp">
+            </Button>
+            <Button
+                android:layout_width="@dimen/_110sdp"
+                android:id="@+id/search"
+                android:paddingLeft="@dimen/_10sdp"
+                android:background="#00FFFFFF"
+                android:hint="@string/timkiemoday"
+                android:textColorHint="#B0000000"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+
+            </Button>
+        </LinearLayout>
+            <Button
+                android:layout_width="@dimen/_80sdp"
+                android:id="@+id/located"
+                android:background="#00FFFFFF"
+                android:text="@string/viTri"
+                android:textColor="#11CAF9"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="@dimen/_20sdp"
+                android:drawableRight="@drawable/placeholder"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:layout_height="@dimen/_25sdp">
+
+            </Button>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_below="@id/linearsearch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </Button>
+            </androidx.viewpager.widget.ViewPager>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/circle_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewPager"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_2sdp">
+
+            </me.relex.circleindicator.CircleIndicator>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_below="@id/circle_indicator"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/monTay"
+                    android:textColor="#000000"
+                    android:background="@drawable/shape_button_menu"
+                    android:drawableTop="@drawable/english_food"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/monTay"
+                    android:textSize="@dimen/_8sdp">
+
+                </Button>
+
+                <Button
+                    android:textColor="#000000"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/monTau"
+                    android:background="@drawable/shape_button_menu"
+                    android:drawableTop="@drawable/chinese_food"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/monTau"
+                    android:textSize="@dimen/_8sdp">
+
+                </Button>
+
+                <Button
+                    android:textColor="#000000"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/monViet"
+                    android:background="@drawable/shape_button_menu"
+                    android:drawableTop="@drawable/noodle"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/monViet"
+                    android:textSize="@dimen/_8sdp">
+
+                </Button>
+
+                <Button
+                    android:textColor="#000000"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/monAn"
+                    android:background="@drawable/shape_button_menu"
+                    android:drawableTop="@drawable/indian_food"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/monAn"
+                    android:textSize="@dimen/_8sdp">
+
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/linear2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_below="@id/linear1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:textColor="#000000"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/doChienRan"
+                    android:background="@drawable/shape_button_menu"
+                    android:drawableTop="@drawable/fried_chicken"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/doChienRaN"
+                    android:textSize="@dimen/_8sdp">
+
+                </Button>
+
+
+                <Button
+                    android:textColor="#000000"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/doAnVat"
+                    android:background="@drawable/shape_button_menu"
+                    android:drawableTop="@drawable/snacks"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/doAnVat"
+                    android:textSize="@dimen/_8sdp">
+
+                </Button>
+
+                <Button
+                    android:textColor="#000000"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/doUong"
+                    android:background="@drawable/shape_button_menu"
+                    android:drawableTop="@drawable/drink"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/doUong"
+                    android:textSize="@dimen/_8sdp">
+
+                </Button>
+
+                <Button
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:id="@+id/doNgot"
+                    android:background="@drawable/shape_button_menu"
+                    android:drawableTop="@drawable/cupcake"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/doNgot"
+                    android:textSize="@dimen/_8sdp">
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearmenu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear2"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textviewpager1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/monDangHot"
+
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_2sdp">
+
+                </androidx.viewpager.widget.ViewPager>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearmenu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearmenu1"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textviewpager2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/homNayAnGi"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_2sdp">
+
+                </androidx.viewpager.widget.ViewPager>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearmenu2"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textviewpager3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/trumCuoiDongGia"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_2sdp">
+
+                </androidx.viewpager.widget.ViewPager>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp">
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+</layout>

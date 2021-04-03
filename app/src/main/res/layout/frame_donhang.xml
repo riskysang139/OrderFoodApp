@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+<RelativeLayout
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text"
+            android:text="@string/gioHang"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+        </TextView>
+    <FrameLayout
+        android:layout_below="@id/text"
+        android:id="@+id/frameLayout"
+        android:layout_above="@id/linear123"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/textrong"
+            android:textSize="@dimen/_16sdp"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:text="Giỏ hàng của bạn còn trống"></TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/gioHangRecyclerView"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_above="@id/thanhToan"
+        android:layout_width="@dimen/_280sdp"
+        android:id="@+id/linear123"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:text="Tổng tiền"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/main_color"
+            android:gravity="center_vertical"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="0 VNĐ"
+            android:id="@+id/totalPrice"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/main_color"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/_20sdp"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </LinearLayout>
+            <Button
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Thanh Toán"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="@dimen/_44sdp"
+                android:background="@color/main_color"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/thanhToan"
+                android:layout_centerInParent="true">
+            </Button>
+</RelativeLayout>
+</layout>

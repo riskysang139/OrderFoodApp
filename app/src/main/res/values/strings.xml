@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Tìm kiếm</string>
+    <string name="trang_chu" translatable="false">Trang chủ</string>
+    <string name="don_hang" translatable="false">Giỏ hàng</string>
+    <string name="da_luu" translatable="false">Yêu thích</string>
+    <string name="thong_bao" translatable="false">Thông báo</string>
+    <string name="toi" translatable="false">Tôi</string>
+    <string name="timkiemoday" translatable="false">ẤN ĐỂ TÌM KIẾM</string>
+    <string name="monTay" translatable="false">Món Tây</string>
+    <string name="monTau" translatable="false">Món Tàu</string>
+    <string name="monViet" translatable="false">Món Việt</string>
+    <string name="monAn" translatable="false">Món Ấn</string>
+    <string name="doChienRaN" translatable="false">Đồ Chiên Rán</string>
+    <string name="doAnVat" translatable="false">Đồ Ăn Vặt</string>
+    <string name="doUong" translatable="false">Đồ Uống</string>
+    <string name="doNgot" translatable="false">Đồ Ngọt</string>
+    <string name="maGiamGia" translatable="false">Bạn ơi , mã giảm giá ở đây nè ! </string>
+    <string name="monDangHot" translatable="false">Món Đang Hot !</string>
+    <string name="homNayAnGi">Hôm Nay Ăn Gì ?</string>
+    <string name="trumCuoiDongGia">Trùm Cuối Đồng Giá</string>
+    <string name="diaChi">Hà Nội </string>
+    <string name="title_activity_mon_an1">MonAn1</string>
+    <string name="tenMon">Tên Món Ăn :</string>
+    <string name="mieuTaChiTiet">Chi Tiết Món Ăn : </string>
+    <string name="thongTinMonAn">Thông Tin Món Ăn</string>
+    <string name="gia">Giá :</string>
+    <string name="yeuThich">Yêu Thích</string>
+    <string name="themVaoGio">Thêm Vào Giỏ Hàng</string>
+    <string name="timKiemPhoBien">Tìm Kiếm Phổ Biến :</string>
+    <string name="viTri">Vị Trí</string>
+    <string name="gaKungBao1">Gà Kung Pao</string>
+    <string name="soDienThoai">Số điện thoại :</string>
+    <string name="Email">Email :</string>
+    <string name="trungTamTroGiup">Trung tâm trợ giúp </string>
+    <string name="hoVaTen">Họ và Tên :</string>
+    <string name="lienHe">Liên hệ</string>
+    <string name="veChungToi">Về chúng tôi</string>
+    <string name="supCoZiDo">Súp Cozido</string>
+    <string name="banhBuscheratti"> Bánh Bruschetta - Ý</string>
+    <string name="miSpaghetti">Mì Spaghetti - Ý</string>
+    <string name="banhRosti">Bánh Rosti - Thụy Sỹ</string>
+    <string name="banhPizza">Bánh Pizza Rau Củ - Ý</string>
+    <string name="banhCrepe">Bánh Crepe - Pháp</string>
+    <string name="dangXuat">Đăng Xuất</string>
+    <string name="gaKungBao">Gà Kung Pao
+        (Gà Xào Ớt Đậu Phộng)</string>
+    <string name="chanGaTauXi">Chân Gà Tàu Xì (Nước Tương) </string>
+    <string name="user">Người Dùng</string>
+    <string name="nhapTuKhoa">Nhập Từ Khóa</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_vi_tri">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="gioHang">Giỏ Hàng</string>
+    <string name="dangKi">Đăng kí tài khoản</string>
+    <string name="taiKhoan">Tài Khoản</string>
+    <string name="matKhau">Mật Khẩu</string>
+    <string name="dangNhap">Đăng Nhập</string>
+    <string name="matKhau1">Mật Khẩu :</string>
+    <string name="taiKhoan1">Tài Khoản :</string>
+    <string name="monMoi">Món Mới Sắp Ra Mắt !</string>
+    <string name="voucher">Voucher Tháng 1 !!!</string>
+    <string name="suKien">Sự Kiện Trong Tháng</string>
+    <string name="lichSuTimKiem">Sản Phẩm Được Quan Tâm :</string>
+    <string name="timKiemODay">Tìm Kiếm</string>
+    <string-array name="listMon">
+        <item>Bánh Bruschetta - Ý</item>
+        <item>Bánh Pizza Rau Củ - Ý</item>
+        <item>Bánh Crepe - Pháp</item>
+        <item>Bánh Rosti - Thụy Sỹ</item>
+    </string-array>
+</resources>
